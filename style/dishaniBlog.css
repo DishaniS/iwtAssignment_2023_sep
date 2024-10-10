@@ -1,0 +1,227 @@
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+}
+
+/*heading*/
+#heading{
+  color: darkgreen;
+  text-align: center;
+}
+
+#para1{
+  text-align: center;
+  font-family: 'courier new', monospace;
+  font-weight: bold;
+
+}
+
+#subh1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  color: gray;
+}
+
+div.list1{
+  color: floralwhite;
+  text-align: center;
+}
+
+ol.myol{
+  display: inline-block;
+  text-align: left;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  max-height: 50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: yellow;
+  font-size: 30px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Number text (1/10 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 100%) {
+  .text {font-size: 11px}
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: tahoma;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: black;
+ } 
+
+ section{
+  height: 150vh;
+  width: 100%
+  display: flex;
+  justify-content: center;
+  font-family: ;
+
+ }
+
+ #section1{
+  background :linear-gradient(-45deg, white 40%, lightpink 0%);
+  margin: 25px;
+  text-align: revert-layer;
+    height: 200vh;
+ }
+
+ #section2{
+  background :linear-gradient(-45deg, white 30%, lightyellow 0%);
+  margin: 25px;
+  text-align: revert-layer;
+ }
+
+ #section3{
+  background :linear-gradient(-45deg, white 30%, lightblue 0%);
+  margin: 25px;
+  text-align: revert-layer;
+ }
+
+ #section4{
+  background :linear-gradient(-45deg, white 30%, lightcoral 0%);
+  margin: 25px;
+  text-align: revert-layer;
+ }
+
+ #section5{
+  background :linear-gradient(-45deg, white 30%, lightgreen 0%);
+  margin: 25px;
+  text-align: revert-layer;
+ }
+
+ #section6{
+  background :linear-gradient(-45deg, white 30%, lightsalmon 0%);
+  margin: 25px;
+  text-align: revert-layer;
+  height: 160vh;
+ }
+
+ #section7{
+  background :linear-gradient(-45deg, white 30%, lightsteelblue 0%);
+  margin: 25px;
+  text-align: revert-layer;
+  height: 130vh;
+ }
+
+ #section8{
+  background :linear-gradient(-45deg, white 30%, lightgrey 0%);
+  margin: 25px;
+  text-align: revert-layer;
+  height: 250vh;
+ }
+
+ #section9{
+  background :linear-gradient(-45deg, white 30%, lightslategray 0%);
+  margin: 25px;
+  text-align: revert-layer;
+  height: 80vh;
+ }
+
+ #section10{
+  background :linear-gradient(-45deg, white 30%, lightseagreen 0%);
+  margin: 25px;
+  text-align: revert-layer;
+  height: 100vh;
+ }
+
+ #subt1{
+  text-align: center;
+ }
+
+ #subt2{
+    text-align: center;
+ }
+
+ #subt3{
+    text-align: center;
+ }
+
+#subt4{
+    text-align: center;
+ }
+
+ #subt5{
+    text-align: center;
+ }
+
+#subt6{
+    text-align: center;
+ }
+
+ #subt7{
+    text-align: center;
+ }
+
+ #subt8{
+    text-align: center;
+ }
+
+ #subt9{
+    text-align: center;
+ }
+
+ #subt10{
+    text-align: center;
+ }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Trainer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #49545e;
+        }
+        .new-trainer{
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #363232;
+            text-align: center;
+            width: 500px;
+            padding: 40px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            box-shadow: 0 0 10px #000;
+        }
+        .new-trainer h1{
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .new-trainer input[type="text"], .new-trainer input[type="email"], .new-trainer input[type="password"]{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        .new-trainer input[type="text"]:focus, .new-trainer input[type="email"]:focus, .new-trainer input[type="password"]:focus{
+            width: 280px;
+            border-color: #2ecc71;
+        }
+        .new-trainer input[type="submit"]{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        .new-trainer input[type="submit"]:hover{
+            background: #2ecc71;
+        }
+        .new-trainer a{
+            color: #3498db;
+            text-decoration: none;
+        }
+        .new-trainer a:hover{
+            color: #fff;
+        }
+        input[type="date"]{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        input[type="date"]:focus{
+            width: 280px;
+            border-color: #2ecc71;
+        }
+        select{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: rgb(132, 123, 123);
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        select:focus{
+            width: 280px;
+            border-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+     <div class="new-trainer">
+        <h1>New Trainer</h1>
+        <form name="new-trainer" onsubmit="return validateForm()" action="add-new-trainer.php" method="POST" >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="name" required>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <label for="address">Address</label>
+            <input type="text" name="address"  placeholder="Address" id="address" autocomplete="street-address" required>
+            <label for="position">Position</label>
+            <select name="position" id="position" required>
+                <option value="Head-Trainer">Head-Trainer</option>
+                <option value="Manager-Trainer">Manager-Trainer</option>
+                <option value="Assistant-Trainer">Assistant-Trainer</option>
+                <option value="Instructor-Trainer">Instructor-Trainer</option>
+            </select>
+            <label for="dob">Date of Birth</label>
+            <input type="Date" name="dob" id="dob"  placeholder="Date of Birth" autocomplete="bday" required><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" required>
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone"  placeholder="Phone Number" autocomplete="tel" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"  placeholder="Password" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password"  placeholder="Confirm Password" required>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+        
+        <script>
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var gender = document.getElementById("gender").value;
+                var address = document.getElementById("address").value;
+                var position = document.getElementById("position").value;
+                var dob = document.getElementById("dob").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var password = document.getElementById("password").value;
+                var confirmPassword = document.getElementById("confirm-password").value;
+            
+                // Name validation (only letters)
+                var nameRegex = /^[a-zA-Z\s]*$/;
+                if (!name.match(nameRegex)){
+                    alert("Please enter a valid name");
+                    return false;
+                }
+
+                //address validation
+                var addressRegex = /^[a-zA-Z0-9\s,'-]*$/;
+                if (!address.match(addressRegex)){
+                    alert("Please enter a valid address");
+                    return false;
+                }
+
+                // Phone number validation (10 digits)
+                var phoneRegex = /^\d{10}$/;
+                if (!phone.match(phoneRegex)) {
+                    alert("Phone number must be 10 digits.");
+                    return false;
+                }
+            
+                // Password validation 
+                var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                if (!password.match(passwordRegex)) {
+                    alert("Password must be at least 8 characters and include letters, numbers, and special characters.");
+                    return false;
+                }
+            
+                // Confirm password
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match.");
+                    return false;
+                }
+            
+            
+                return true;
+            }
+            </script>
+            
+    
+    </div>
+
+</body>
+
+</html>

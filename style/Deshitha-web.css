@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+html
+{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    height: 4000px;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(MLB_WD_03.02_06//Images/background6.jpg);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+
+}
+ul
+{
+    list-style: none;
+}
+
+
+
+.slider
+{   
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+#slideimg
+{
+    width: 100%;
+    height: 800px;
+}
+
+
+
+.info
+{   
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.personal
+{   
+    width: 15%;
+    border-right: 2px solid black;
+    font-size: 20px;
+}
+.personal img
+{
+    width: 200px;
+    height: 200px;
+    margin-left: 1%;
+}
+.personal h1
+{
+    margin-left: 3%;
+}
+.personal a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.main
+{   
+    width: 70%;
+    padding: 20px;
+}
+.main img
+{
+    width: 200px;
+}
+.mtop img
+{
+    width: 100px;
+    height: 100px;
+}
+.mtop .btns li
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mtop .btns a button
+{   
+    height: 80px;
+    width: 900px;
+    margin-right: 150px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.mtop .btns a button:hover
+{
+    background-color: black;
+    color: white;
+}
+.mtop .btns select
+{   
+    height: 80px;
+    width: 900px;
+    margin-right: 190px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.mtop .btns select:hover
+{
+    background-color: black;
+    color: white;
+}
+.mmid
+{
+    margin-top: 5%;
+}
+.mmid ul
+{   
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.mmid li
+{
+    width: 350px;
+    height: 800px;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+.mbtm
+{
+    margin-top: 10%;
+}
+.mbtm h1
+{
+    text-align: center;
+}
+.mbtm ul
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-right: 30px;
+}
+.mbtm li
+{
+    width: 350px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: white;
+}
+.mmid li a button
+{   
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+
+.charts
+{   
+    width: 20%;
+    padding: 20px;
+}
+.charts img
+{
+    width: 400px;
+}
+.charts .img2
+{
+    margin-top: 300px;
+}
+
+.charts .img3
+{
+    margin-top: 300px;
+}
+
+.mmid button:hover
+{
+    background-color: rgba(5, 255, 101, 0.911);
+    color: black;
+    transition: 0.5s;
+}

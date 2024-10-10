@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/Binara-style.css">
+    <title>Merchandise</title>
+</head>
+<body>
+    <h1>Merchandise Page</h1>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="../images/image1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="../images/image2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="../images/image3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="../images/image4.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="../images/image5.jpg" style="width: 100%;">
+        </div>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script src="script/Binara-script.js"></script>
+
+    <br>
+
+    <div class="topnav">
+        <a href="#Gym Wear">Gym Wear</a>
+        <a href="#Equipment">Equipment</a>
+        <a href="#Supplements">Supplements</a>
+        <a href="#Accessories">Accessories</a>
+        <input type="text" placeholder="Search..">
+        <a href="#View Cart" style="background-color: rgb(190, 190, 190);">View Cart</a>
+     </div>
+
+     <br>
+
+     <div class="side">
+        <div class="box">
+            <img src="../images/img1.jpg">
+        </div>
+        <div class="box">
+            <img src="../images/img2.jpg">
+        </div>
+        <div class="box">
+            <img src="../images/img3.jpg">
+        </div>
+        <div class="box">
+            <img src="../images/img4.jpg">
+        </div>
+        <div class="box">
+            <img src="../images/5.jpg">
+        </div>
+     </div>
+
+    <hr> 
+
+     <div id="Gym Wear">
+        <h1>Gym Wear</h1>
+        <div class="container">
+            <div class="product">
+                <img src="../images/gym wear/2.jpg" alt="Product Image">
+                <p>Women Gym Wear</p>
+                <p>$8.00</p>
+                <button onclick="addToCart('Women gym wear', 8.00, '../images/gym wear/2.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/gym wear/3.jpg" alt="Product Image">
+                <p>Women Gym Wear</p>
+                <p>$7.99</p>
+                <button onclick="addToCart('Women Gym Wear', 1.00, '../images/gym wear/3.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/gym wear/4.jpg" alt="Product Image">
+                <p>Men Gym Wear</p>
+                <p>$15.00</p>
+                <button onclick="addToCart('Men Gym Wear', 15.00, '../images/gym wear/4.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/gym wear/5.jpg" alt="Product Image">
+                <p>Men Skinner</p>
+                <p>$5.00</p>
+                <button onclick="addToCart('Men Skinner', 5.00, '../images/gym wear/5.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/gym wear/6.jpg" alt="Product Image">
+                <p>Women Gym Wear</p>
+                <p>$4.99</p>
+                <button onclick="addToCart('Women Gym Wear', 4.99, '../images/gym wear/6.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/gym wear/7.jpg" alt="Product Image">
+                <p>Women Gym Wear</p>
+                <p>$6.00</p>
+                <button onclick="addToCart('Women Gym Wear', 6.00, '../images/gym wear/7.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/gym wear/8.jpg" alt="Product Image">
+                <p>Men Gym Wear</p>
+                <p>$9.00</p>
+                <button onclick="addToCart('Men Gym Wear', 9.00, '../images/gym wear/8.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/gym wear/9.jpg" alt="Product Image">
+                <p>Men Skinner</p>
+                <p>$8.00</p>
+                <button onclick="addToCart('Men Skinner', 8.00, '../images/gym wear/9.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/gym wear/10.jpg" alt="Product Image">
+                <p>Women Skinner</p>
+                <p>$9.99</p>
+                <button onclick="addToCart('Women Skinner', 9.99, '../images/gym wear/10.jpg')">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div id="Equipment">
+            <h1>Equipment</h1>
+            <div class="container">
+                <div class="product">
+                    <img src="../images/equipments/1.jpg" alt="Product Image">
+                    <p>Exercise Machine</p>
+                    <p>$100.00</p>
+                    <button onclick="addToCart('Exercise Machine', 100.00, '../images/equipments/1.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../images/equipments/2.jpg" alt="Product Image">
+                    <p>Exercise Machine</p>
+                    <p>$88.00</p>
+                    <button onclick="addToCart('Exercise Machine', 88.00, '../images/equipments/2.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../images/equipments/3.jpg" alt="Product Image">
+                    <p>Exercise Machine</p>
+                    <p>$45.00</p>
+                    <button onclick="addToCart('Exercise Machine', 45.00, '../images/equipments/3.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../images/equipments/4.jpg" alt="Product Image">
+                    <p>Exercise Machine</p>
+                    <p>$110.00</p>
+                    <button onclick="addToCart('Exercise Machine', 110.00, '../images/equipments/4.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../images/equipments/5.jpg" alt="Product Image">
+                    <p>Exercise Machine</p>
+                    <p>$66.00</p>
+                    <button onclick="addToCart('Exercise Machine', 66.00, '../images/equipments/5.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../images/equipments/6.jpg" alt="Product Image">
+                    <p>Exercise Machine</p>
+                    <p>$75.00</p>
+                    <button onclick="addToCart('Exercise Machine', 75.00, '../images/equipments/6.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../images/equipments/11.jpg" alt="Product Image">
+                    <p>Exercise Machine</p>
+                    <p>$30.00</p>
+                    <button onclick="addToCart('Exercise Machine', 30.00, '../images/equipments/11.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../images/equipments/8.jpg" alt="Product Image">
+                    <p>Bar Bell Set</p>
+                    <p>$99.99</p>
+                    <button onclick="addToCart('Exercise Machine', 99.99, '../images/equipments/8.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../images/equipments/9.jpg" alt="Product Image">
+                    <p>Bar Bell Set</p>
+                    <p>$35.00</p>
+                    <button onclick="addToCart('Exercise Machine', 35.00, '../images/equipments/9.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../images/equipments/10.jpg" alt="Product Image">
+                    <p>Bar Bell</p>
+                    <p>$20.00</p>
+                    <button onclick="addToCart('Exercise Machine', 20.00, '../images/equipments/10.jpg')">Add to Cart</button>
+                </div>
+            </div>
+         </div>
+
+     <br>
+     <hr>
+     <br>
+
+     <div id="Supplements">
+        <h1>Supplements</h1>
+        <div class="container">
+            <div class="product">
+                <img src="../images/supplement/1.jpg" alt="Product Image">
+                <p>Whey</p>
+                <p>$30.00</p>
+                <button onclick="addToCart('Whey', 30.00, 'images/supplement/1.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/supplement/2.jpg" alt="Product Image">
+                <p>Super Whey</p>
+                <p>$50.00</p>
+                <button onclick="addToCart('Super Whey', 50.00, 'images/supplement/2.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/supplement/3.jpg" alt="Product Image">
+                <p>Signature Whey</p>
+                <p>$45.00</p>
+                <button onclick="addToCart('Signature Whey', 45.00, 'images/supplement/3.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/supplement/4.jpg" alt="Product Image">
+                <p>BPI Whey</p>
+                <p>$35.99</p>
+                <button onclick="addToCart('BPI Whey', 35.99, 'images/supplement/4.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/supplement/5.jpg" alt="Product Image">
+                <p>Pure Carb</p>
+                <p>$78.00</p>
+                <button onclick="addToCart('Pure Carb', 78.00, 'images/supplement/5.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/supplement/6.jpg" alt="Product Image">
+                <p>Nitro Tech</p>
+                <p>$100.00</p>
+                <button onclick="addToCart('Nitro Tech', 100.00, 'images/supplement/6.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/supplement/7.jpg" alt="Product Image">
+                <p>Gold Whey</p>
+                <p>$99.00</p>
+                <button onclick="addToCart('Gold Whey', 99.00, 'images/supplement/7.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/supplement/9.jpg" alt="Product Image">
+                <p>Creatine</p>
+                <p>$25.00</p>
+                <button onclick="addToCart('Creatine', 25.00, 'images/supplement/9.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/supplement/10.jpg" alt="Product Image">
+                <p>Protein Bar</p>
+                <p>$10.00</p>
+                <button onclick="addToCart('Protein Bar', 10.00, 'images/supplement/10.jpg')">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+
+     <br><hr><br>
+
+    <div id="Accessories">
+        <h1>Accessories</h1>
+        <div class="container">
+            <div class="product">
+                <img src="images/Accessories/2.jpg" alt="Product Image">
+                <p>Gym Accessorie Kit</p>
+                <p>$20.00</p>
+                <button onclick="addToCart('Gym Accessorie Kit', 20.00, 'images/Accessories/2.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Accessories/3.jpg" alt="Product Image">
+                <p>Leg Accessorie Kit</p>
+                <p>$50.00</p>
+                <button onclick="addToCart('Leg Accessorie Kit', 50.00, 'images/Accessories/3.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Accessories/12.jpg" alt="Product Image">
+                <p>Gym Accessorie Kit</p>
+                <p>$35.00</p>
+                <button onclick="addToCart('Gym Accessorie Kit', 35.00, 'images/Accessories/12.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Accessories/5.jpg" alt="Product Image">
+                <p>Gym Accessorie Kit</p>
+                <p>$32.00</p>
+                <button onclick="addToCart('Gym Accessorie Kit', 32.00, 'images/Accessories/5.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Accessories/7.jpg" alt="Product Image">
+                <p>Gym Accessorie Kit</p>
+                <p>$66.00</p>
+                <button onclick="addToCart('Gym Accessorie Kit', 66.00, 'images/Accessories/7.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Accessories/123.jpg" alt="Product Image">
+                <p>Gym Accessorie Kit</p>
+                <p>$24.00</p>
+                <button onclick="addToCart('Gym Accessorie Kit', 24.00, 'images/Accessories/123.jpg')">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+
+
+<br><br><hr><br>
+
+<form action="Binara-merch.php" method="post" enctype="multipart/form-data">
+<div id="View Cart">
+<div class="cart-container">
+    <h1>View Cart</h1>
+    <table id="cart-table">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</div>
+</div>
+</form>
+
+</body>
+</html>

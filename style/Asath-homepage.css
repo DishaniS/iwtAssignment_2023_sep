@@ -1,0 +1,339 @@
+.homepage {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.banner-motive {
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    border-radius: 10px;
+}
+.banner-motive p {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 50px;   
+}
+.banner-image {
+    width: 50%;
+}
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    font-size: 20px;
+}
+.about-des{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about-des h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.about-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about-content h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.about-content p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.fitness-programs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.yoga{
+    width: 30%;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    font-size: 20px;
+}
+.yoga:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.yoga-image{
+    width: 100%;
+}
+.yoga-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.yoga-des{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.yoga-des h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.yoga-des p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.cardio{
+    width: 30%;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    font-size: 20px;
+}
+.cardio:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.cardio-image{
+    width: 100%;
+}
+.cardio-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.cardio-des{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cardio-des h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.cardio-des p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.strength{
+    width: 30%;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    font-size: 20px;
+}
+.strength:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.strength-image{
+    width: 100%;
+}
+.strength-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.strength-des{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.strength-des h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.strength-des p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.testimonials{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    font-size: 20px;
+}
+.testimonials-des{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials-des h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.testimonials-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials-content h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.testimonials-content p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.testimonials-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials-image img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.testimonials-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials-name p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.testimonials-des{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials-des h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.contact{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    font-size: 20px;
+}
+.contact-des{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-des h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.contact-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-content h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.contact-content p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.contact-content a{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.contact-page{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-page button{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.contact-page button:hover{
+    background: #2ecc71;
+}
+.contact-page a{
+    text-decoration: none;
+    color: white;
+}
+.contact-page a:hover{
+    color: #2ecc71;
+}

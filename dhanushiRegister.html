@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="script/Dhanushi-check.js"></script>
+
+    <style> 
+        * {
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+        body {
+            background:#404040;
+            color: #4B0082;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            padding: 25px 30px;
+            border-radius: 25px;
+            background: linear-gradient(109.6deg, rgb(251, 186, 186) 11.2%, rgb(200, 122, 245) 91.2%);
+        }
+
+        .container .heading {
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+            padding-bottom: 20px;
+            background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            font-size: 2.5rem;
+        }
+
+        .container form .card-details {
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        form .card-details .card-box {
+            width: calc(100%/2 - 20px);
+            margin-bottom: 15px;
+        }
+
+
+        .card-details .card-box .details {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .card-details .card-box input:not([type="checkbox"]), select {
+            height: 45px;
+            width: 375px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+
+        form .button {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 0;
+            margin-top: 10px;
+            height: 50px;
+            width: 100px;
+            outline: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            background: radial-gradient(circle at 10% 20%, rgb(249, 57, 170) 9.8%, rgb(134, 176, 255) 94.9%);
+        }
+        #back > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        button:hover {
+            background: radial-gradient(346px at 0.3% 100%, rgb(62, 76, 167) 0%, rgb(255, 99, 145) 100.7%);
+            color: aliceblue;
+        }
+        button:disabled {
+            background: grey; 
+            color: #666; 
+        }
+
+        hr  {
+            border: 1px solid purple;
+        } 
+        .error {
+            color: red;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Registration Form</h1>
+        <form action="dhanushiRegister.php" method="POST" onsubmit="return handleSubmit(event)">
+            <h3>Personal Details</h3><br>
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Full Name:</span>
+                    <input type="text" name="name" id="name" required>
+                    <div id="name-error" class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details">NIC:</span>
+                    <input type="text" name="nic" id="nic" required>
+                </div>
+                <div class="card-box">
+                    <span class="details">Email:</span>
+                    <input type="email" name="email" id="email" required>
+                    <div id="email-error" class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details">Address:</span>
+                    <input type="text" name="address" id="address" required>
+                </div>
+                <div class="card-box">
+                    <span class="details">Contact Number:</span>
+                    <input type="number" name="phone" id="phone" required>
+                    <div id="phone-error" class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details">Date of Birth:</span>
+                    <input type="date" name="dob" id="dob" required>
+                    <div id="dob-error" class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details">Age:</span>
+                    <input type="text" name="age" id="age" required>
+                    <div id="age-error" class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details">Gender:</span>
+                    <select name="gender" id="gender" required>
+                        <option value="blank" id="blank">--Choose--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="card-box">
+                    <span class="details">Body Height:</span>
+                    <input type="text" name="height" id="height" required>
+                    <div id="height-error" class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details">Body Weight:</span>
+                    <input type="text" name="weight" id="weight" required>
+                    <div id="weight-error" class="error"></div>
+                </div>
+            </div>
+            <hr><br>
+
+            <h3>Account Details</h3>
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">UserName:</span>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="card-box">
+                    <span class="details">Subscription</span>
+                    <select name="subs" id="subs" required>
+                        <option value="blank" id="bSubs">--Choose--</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="6months">6 Months</option>
+                        <option value="1year">1 Year</option>
+                    </select>
+                </div>
+                <div class="card-box">
+                    <span class="details">Password:</span>
+                    <input type="password" name="password" id="password" required>
+                    <div class="show-password" id="show-password">Show Password
+                    <span><input type="checkbox" name="showPwd" id="showPwd" onclick="show()"></span></div>
+                    <div id="password-error" class="error"></div>
+                </div>                
+                <div class="card-box">
+                    <span class="details">Confirm Password:</span>
+                    <input type="password" name="confirm-pwd" id="confirm-pwd" required>
+                    <div class="show-password" id="show-Cpassword">Show Password
+                    <span><input type="checkbox" name="showcPwd" id="showcPwd" onclick="show1()"></span></div>
+                    <div id="confirm-pwd-error" class="error"></div>
+                </div>
+            </div>
+            <div class="card-box" onclick="enableButton()">
+                <input type="checkbox" name="agree" id="agree" >
+                <span class="terms">I understand and agree to be bound by the <b>Terms of Use</b> and <b>Privacy Policy</b>.</span>
+                <div id="terms-error" class="error"></div>
+                <div class="button"><button type="submit" name="submit" id="submit" disabled>Register</button></div>
+            </div>
+        </form>
+        <span class="button" onclick="clearForm()"><button>Clear</button></span>
+        <span class="button"><button id="back"><a href= "dhanushiLogin.php">Back</a></button></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+.homepage{
+    margin: 100px;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.user-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dashboard{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    width: 100%; 
+    padding: 20px;  
+    justify-content: space-around;
+}
+.workout-plans, .nutrition-plans, .progress-report, .profile-settings{
+    display: flex;
+    background-color: rgba(245, 242, 242, 0.5);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+.workout-plans:hover, .nutrition-plans:hover, .progress-report:hover, .profile-settings:hover{
+    background-color: rgb(0, 0, 0, 0.9);
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.workout-icon, .nutrition-icon, .progress-icon, .profile-icon1{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.workout-icon img, .nutrition-icon img, .progress-icon img, .profile-icon1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.goto-workout-button, .goto-nutrition-button, .goto-progress-button, .goto-profile-button{
+    margin-top: 20px;
+}
+.goto-workout-button button, .goto-nutrition-button button, .goto-progress-button button, .goto-profile-button button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #000;
+    background-color: #ffd;
+    transition: 0.25s;
+}
+.goto-workout-button button:hover, .goto-nutrition-button button:hover, .goto-progress-button button:hover, .goto-profile-button button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.quick-access{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+.quick-access-title{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.quick-access-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.quick-access-button{
+    margin: 10px;
+}
+.quick-access-button button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #000;
+    background-color: #fff;
+    transition: 0.25s;
+}
+.quick-access-button button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+.services-title{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.service-tile1, .service-tile2, .service-tile3, .service-tile4{
+    display: flex;
+    background-color: rgba(245, 242, 242, 0.5);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+.service-tile1:hover, .service-tile2:hover, .service-tile3:hover, .service-tile4:hover{
+    background-color: rgb(0, 0, 0, 0.9);
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.service-tile1-image, .service-tile2-image, .service-tile3-image, .service-tile4-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.service-tile1-image img, .service-tile2-image img, .service-tile3-image img, .service-tile4-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.service-tile1-button, .service-tile2-button, .service-tile3-button, .service-tile4-button{
+    margin-top: 20px;
+}
+.service-tile1-button button, .service-tile2-button button, .service-tile3-button button, .service-tile4-button button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #000;
+    background-color: #ffd;
+    transition: 0.25s;
+}
+.service-tile1-button button:hover, .service-tile2-button button:hover, .service-tile3-button button:hover, .service-tile4-button button:hover{
+    background-color: #000;
+    color: #fff;
+}

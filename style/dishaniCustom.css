@@ -1,0 +1,159 @@
+body{
+	background-image: url('../images/bgimg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dashboardform {
+    width: 100%;
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+#form_div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+form{
+	background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+h1,h3{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+label {
+	font-size: 16px;
+}
+
+h4, legend{
+	font-size: 18px;
+}
+
+.img1{
+	color: black;
+	opacity: 1;
+}
+
+#button1, #button2, #button3{
+	text-align: center;
+	background-color: #ffe4c4;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.5s;
+	border-radius: 25px;
+	display: flex;
+}
+
+#button1:hover{
+	background-color: lightgray;
+}
+
+#button2:hover{
+	background-color: lightgray;
+}
+
+#button3:hover{
+	background-color: lightgray;
+}
+
+fieldset{
+	font-size: 27px;
+	width: 550px;
+	height: 80px;
+}
+
+.sel-rad{
+	border-radius: 7px;
+	height: 25px;
+}
+.weh{
+	border-radius: 7px;
+	font-weight: bold;
+}
+
+.field{
+	border-radius: 15px;
+}
+
+#gender_and_unit_container {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#buttonSet{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+/* Add this CSS to your existing stylesheet */
+.dashboardform {
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 20px;
+}
+.dashboardform th, .dashboardform td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.dashboardform th {
+    background-color: #007BFF;
+    color: #fff;
+}
+.dashboardform tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.dashboardform tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.smallbtncontainer {
+    text-align: center;
+}
+.smallbtn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+.smallbtn:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 600px) {
+    .dashboardform {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+
+.deletemsg {
+    text-align: center;
+    color: white;
+}
+

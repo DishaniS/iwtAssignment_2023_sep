@@ -1,0 +1,184 @@
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(100, 80, 70);
+        color: white;
+        font-family: 'Pacifico', cursive;
+    }
+    .status{
+        padding: 5px;
+    }
+    .system-text{
+        padding: 5px;
+    }
+    .system-text h1{
+        text-align: center;
+    }
+    .system-tables{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .trainer-status, .report-status, .user-status{
+        padding: 5px;
+    }
+    .trainer-status h1, .report-status h1, .user-status h1{
+        text-align: center;
+    }
+    .trainer-status h2, .report-status h2, .user-status h2{
+        text-align: center;
+    }
+    
+        
+    .new-trainer-button{
+        padding: 5px;
+    }
+    .new-trainer-button button{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: rgb(176, 186, 181);
+    }
+    .new-trainer-button button:hover{
+        background-color: rgb(255, 255, 255, 0.2);
+        color: black;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+        transition:0.3s;
+    }
+    .trainer-table{
+        padding: 5px;
+    }
+    .trainer-table table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .trainer-table table thead{
+        background-color: rgb(255, 255, 255, 0.2);
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .trainer-table table thead th{
+        padding: 5px;
+        text-align: center;
+    }
+    .trainer-table table tbody{
+        background-color: rgb(255, 255, 255, 0.2);
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .trainer-table table tbody td{
+        padding: 5px;
+        text-align: center;
+    }
+    .trainer-table table tbody td a{
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        border-radius: 20px;
+        transition:0.3s;
+    }
+    .trainer-table table tbody td a:hover{
+        background-color: rgb(176, 186, 181);
+        color: black;
+        padding: 5px;
+        border-radius: 20px;
+        transition:0.3s;
+    }
+    .report{
+        padding: 5px;
+    }
+    .report-des{
+        padding: 5px;
+    }
+    .report-des h1{
+        text-align: center;
+    }
+    .report-table{
+        padding: 5px;
+    }
+    .report-table table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .report-table table thead{
+        background-color: rgb(255, 255, 255, 0.2);
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .report-table table thead th{
+        padding: 5px;
+        text-align: center;
+    }
+    .report-table table tbody{
+        background-color: rgb(255, 255, 255, 0.2);
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .report-table table tbody td{
+        padding: 5px;
+        text-align: center;
+    }
+    .report-table table tbody td a{
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        border-radius: 20px;
+        transition:0.3s;
+    }
+    .report-table table tbody td a:hover{
+        background-color: rgb(176, 186, 181);
+        color: black;
+        padding: 5px;
+        border-radius: 20px;
+        transition:0.3s;
+    }
+    .user{
+        padding: 5px;
+    }
+    .user-des{
+        padding: 5px;
+    }
+    .user-des h1{
+        text-align: center;
+    }
+    .user-table{
+        padding: 5px;
+    }
+    .user-table table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .user-table table thead{
+        background-color: rgb(255, 255, 255, 0.2);
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .user-table table thead th{
+        padding: 5px;
+        text-align: center;
+    }
+    .user-table table tbody{
+        background-color: rgb(255, 255, 255, 0.2);
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .user-table table tbody td{
+        padding: 5px;
+        text-align: center;
+    }
+    .user-table table tbody td a{
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        border-radius: 20px;
+        transition:0.3s;
+    }
+    .user-table table tbody td a:hover{
+        background-color: rgb(176, 186, 181);
+        color: black;
+        padding: 5px;
+        border-radius: 20px;
+        transition:0.3s;
+    }
